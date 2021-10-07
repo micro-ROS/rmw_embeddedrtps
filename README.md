@@ -4,8 +4,6 @@ This package is **experimental**
 
 rmw_embeddedrtps implements the ROS middleware interface using [**embeddedRTPS**](https://github.com/embedded-software-laboratory/embeddedRTPS) as a middleware.
 
-For more information see the repository level [README](../README.md)
-
 ## Quality Declaration
 
 This package claims to be in the **Quality Level 2** category, see the [Quality Declaration](QUALITY_DECLARATION.md) for more details.
