@@ -157,14 +157,6 @@ endif()
 
 ament_package()
 
-# Install includes.
-install(
-  DIRECTORY
-    ${PROJECT_SOURCE_DIR}/include/
-  DESTINATION
-    include
-)
-
 # Install config.h file.
 install(
   FILES
