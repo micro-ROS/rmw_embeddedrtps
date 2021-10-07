@@ -1,8 +1,8 @@
-# `rmw_embeddedrtps`
+# rmw_embeddedrtps
 
 This package is **experimental**
 
-`rmw_embeddedrtps` implements the ROS middleware interface using *embeddedRTPS* as a middleware.
+rmw_embeddedrtps implements the ROS middleware interface using [**embeddedRTPS**](https://github.com/embedded-software-laboratory/embeddedRTPS) as a middleware.
 
 For more information see the repository level [README](../README.md)
 
