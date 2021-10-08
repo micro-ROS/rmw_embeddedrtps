@@ -38,7 +38,7 @@ set(RMW_ERTPS_MAX_HISTORY "10" CACHE STRING
 set(RMW_ERTPS_MAX_INPUT_BUFFER_SIZE "1000" CACHE STRING "TODO")
 set(RMW_ERTPS_MAX_OUTPUT_BUFFER_SIZE "1000" CACHE STRING "TODO")
 
-set(RMW_ERTPS_MAX_SESSIONS "1" CACHE STRING 
+set(RMW_ERTPS_MAX_SESSIONS "1" CACHE STRING "This value sets the maximum number of embeddedRTPS sessions.")
 set(RMW_ERTPS_MAX_NODES "1" CACHE STRING "This value sets the maximum number of nodes.")
 set(RMW_ERTPS_MAX_PUBLISHERS "1" CACHE STRING "This value sets the maximum number of publishers for an application.")
 set(RMW_ERTPS_MAX_SUBSCRIPTIONS "1" CACHE STRING "This value sets the maximum number of subscriptions for an application.")
