@@ -33,6 +33,20 @@ find_package(rmw REQUIRED)
 # Build options
 option(RMW_ERTPS_GRAPH "Allows to perform graph-related operations to the user" OFF)
 
+set(RMW_ERTPS_MAX_HISTORY "10" CACHE STRING 
+"This value sets the number of history slots available for RMW subscriptions, requests and replies")
+set(RMW_ERTPS_MAX_INPUT_BUFFER_SIZE "1000" CACHE STRING "TODO")
+set(RMW_ERTPS_MAX_OUTPUT_BUFFER_SIZE "1000" CACHE STRING "TODO")
+
+set(RMW_ERTPS_MAX_SESSIONS "1" CACHE STRING "This value sets the maximum number of embeddedRTPS sessions.")
+set(RMW_ERTPS_MAX_NODES "1" CACHE STRING "This value sets the maximum number of nodes.")
+set(RMW_ERTPS_MAX_PUBLISHERS "1" CACHE STRING "This value sets the maximum number of publishers for an application.")
+set(RMW_ERTPS_MAX_SUBSCRIPTIONS "1" CACHE STRING "This value sets the maximum number of subscriptions for an application.")
+set(RMW_ERTPS_MAX_SERVICES "1" CACHE STRING "This value sets the maximum number of services for an application.")
+set(RMW_ERTPS_MAX_CLIENTS "1" CACHE STRING "This value sets the maximum number of clients for an application.")
+set(RMW_ERTPS_TOPIC_NAME_MAX_LENGTH "200" CACHE STRING "This value sets the maximum number of characters for a topic name.")
+set(RMW_ERTPS_TYPE_NAME_MAX_LENGTH "200" CACHE STRING "This value sets the maximum number of characters for a type name.")
+
 # Create source files with the define
 configure_file(${PROJECT_SOURCE_DIR}/src/config.h.in
   ${PROJECT_BINARY_DIR}/include/rmw_embeddedrtps/config.h)
