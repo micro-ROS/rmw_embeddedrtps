@@ -24,25 +24,25 @@
 // Static memory pools
 
 rmw_ertps_mempool_t session_memory;
-rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_SESSIONS];
+rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_DOMAINS];
 
 rmw_ertps_mempool_t node_memory;
-rmw_ertps_node_t custom_nodes[RMW_ERTPS_MAX_NODES];
+rmw_ertps_node_t custom_nodes[ERTPS_MAX_PARTICIPANTS];
 
 rmw_ertps_mempool_t publisher_memory;
-rmw_ertps_publisher_t custom_publishers[RMW_ERTPS_MAX_PUBLISHERS];
+rmw_ertps_publisher_t custom_publishers[ERTPS_MAX_PUBLISHERS];
 
 rmw_ertps_mempool_t subscription_memory;
-rmw_ertps_subscription_t custom_subscriptions[RMW_ERTPS_MAX_SUBSCRIPTIONS];
+rmw_ertps_subscription_t custom_subscriptions[ERTPS_MAX_SUBSCRIPTIONS];
 
 rmw_ertps_mempool_t service_memory;
-rmw_ertps_service_t custom_services[RMW_ERTPS_MAX_SERVICES];
+rmw_ertps_service_t custom_services[ERTPS_MAX_SERVICES];
 
 rmw_ertps_mempool_t client_memory;
-rmw_ertps_client_t custom_clients[RMW_ERTPS_MAX_CLIENTS];
+rmw_ertps_client_t custom_clients[ERTPS_MAX_CLIENTS];
 
 rmw_ertps_mempool_t static_buffer_memory;
-rmw_ertps_static_input_buffer_t custom_static_buffers[RMW_ERTPS_MAX_HISTORY];
+rmw_ertps_static_input_buffer_t custom_static_buffers[ERTPS_MAX_HISTORY];
 
 // Memory init functions
 
