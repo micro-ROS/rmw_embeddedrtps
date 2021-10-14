@@ -103,7 +103,7 @@ rmw_init(
   context->implementation_identifier = embeddedrtps_identifier;
   context->actual_domain_id = options->domain_id;
 
-  rmw_ertps_init_session_memory(&session_memory, custom_sessions, RMW_ERTPS_MAX_SESSIONS);
+  rmw_ertps_init_session_memory(&session_memory, custom_sessions, RMW_ERTPS_MAX_DOMAINS);
   rmw_ertps_init_static_input_buffer_memory(
     &static_buffer_memory, custom_static_buffers,
     RMW_ERTPS_MAX_HISTORY);

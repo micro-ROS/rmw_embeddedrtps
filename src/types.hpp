@@ -154,19 +154,19 @@ extern rmw_ertps_mempool_t node_memory;
 extern rmw_ertps_node_t custom_nodes[ERTPS_MAX_PARTICIPANTS];
 
 extern rmw_ertps_mempool_t publisher_memory;
-extern rmw_ertps_publisher_t custom_publishers[ERTPS_MAX_PUBLISHERS];
+extern rmw_ertps_publisher_t custom_publishers[RMW_ERTPS_MAX_PUBLISHERS];
 
 extern rmw_ertps_mempool_t subscription_memory;
-extern rmw_ertps_subscription_t custom_subscriptions[ERTPS_MAX_SUBSCRIPTIONS];
+extern rmw_ertps_subscription_t custom_subscriptions[RMW_ERTPS_MAX_SUBSCRIPTIONS];
 
 extern rmw_ertps_mempool_t service_memory;
-extern rmw_ertps_service_t custom_services[ERTPS_MAX_SERVICES];
+extern rmw_ertps_service_t custom_services[RMW_ERTPS_MAX_SERVICES];
 
 extern rmw_ertps_mempool_t client_memory;
-extern rmw_ertps_client_t custom_clients[ERTPS_MAX_CLIENTS];
+extern rmw_ertps_client_t custom_clients[RMW_ERTPS_MAX_CLIENTS];
 
 extern rmw_ertps_mempool_t static_buffer_memory;
-extern rmw_ertps_static_input_buffer_t custom_static_buffers[ERTPS_MAX_HISTORY];
+extern rmw_ertps_static_input_buffer_t custom_static_buffers[RMW_ERTPS_MAX_HISTORY];
 
 // Memory init functions
 
