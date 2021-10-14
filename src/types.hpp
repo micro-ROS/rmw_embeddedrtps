@@ -151,7 +151,7 @@ extern rmw_ertps_mempool_t session_memory;
 extern rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_DOMAINS];
 
 extern rmw_ertps_mempool_t node_memory;
-extern rmw_ertps_node_t custom_nodes[ERTPS_MAX_PARTICIPANTS];
+extern rmw_ertps_node_t custom_nodes[RMW_ERTPS_MAX_NODES];
 
 extern rmw_ertps_mempool_t publisher_memory;
 extern rmw_ertps_publisher_t custom_publishers[RMW_ERTPS_MAX_PUBLISHERS];
