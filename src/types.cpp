@@ -27,7 +27,7 @@ rmw_ertps_mempool_t session_memory;
 rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_DOMAINS];
 
 rmw_ertps_mempool_t node_memory;
-rmw_ertps_node_t custom_nodes[RMW_ERTPS_MAX_PARTICIPANTS];
+rmw_ertps_node_t custom_nodes[RMW_ERTPS_MAX_NODES];
 
 rmw_ertps_mempool_t publisher_memory;
 rmw_ertps_publisher_t custom_publishers[RMW_ERTPS_MAX_PUBLISHERS];
