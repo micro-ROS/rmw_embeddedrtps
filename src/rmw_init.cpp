@@ -44,6 +44,7 @@ rmw_init_options_init(
   init_options->implementation_identifier = embeddedrtps_identifier;
   init_options->allocator = allocator;
   init_options->enclave = "/";
+  init_options->domain_id = 0;
 
   return RMW_RET_OK;
 }
@@ -100,8 +101,9 @@ rmw_init(
 
   context->instance_id = options->instance_id;
   context->implementation_identifier = embeddedrtps_identifier;
+  context->actual_domain_id = options->domain_id;
 
-  rmw_ertps_init_session_memory(&session_memory, custom_sessions, RMW_ERTPS_MAX_SESSIONS);
+  rmw_ertps_init_session_memory(&session_memory, custom_sessions, RMW_ERTPS_MAX_DOMAINS);
   rmw_ertps_init_static_input_buffer_memory(
     &static_buffer_memory, custom_static_buffers,
     RMW_ERTPS_MAX_HISTORY);
@@ -118,7 +120,8 @@ rmw_init(
   extern sys_sem_t rmw_wait_sem;
   sys_sem_new(&rmw_wait_sem, 0);
 
-  context_impl->domain = new rtps::Domain();
+  // TODO: add domain number check?
+  context_impl->domain = new rtps::Domain(options->domain_id);
   context_impl->participant = context_impl->domain->createParticipant();
   context->impl = context_impl;
 

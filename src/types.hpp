@@ -148,7 +148,7 @@ typedef struct rmw_ertps_static_input_buffer_t
 // Static memory pools
 
 extern rmw_ertps_mempool_t session_memory;
-extern rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_SESSIONS];
+extern rmw_context_impl_t custom_sessions[RMW_ERTPS_MAX_DOMAINS];
 
 extern rmw_ertps_mempool_t node_memory;
 extern rmw_ertps_node_t custom_nodes[RMW_ERTPS_MAX_NODES];
