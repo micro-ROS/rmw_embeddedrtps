@@ -36,7 +36,7 @@
 
 extern "C" {
 
-typedef struct rmw_context_impl_t
+struct rmw_context_impl_s
 {
   rmw_ertps_mempool_item_t mem;
 
@@ -54,9 +54,14 @@ typedef struct rmw_context_impl_t
   rmw_dds_common__msg__ParticipantEntitiesInfo graph_info;
   uint8_t * graph_info_buffer;
 #endif  // RMW_ERTPS_GRAPH
-} rmw_context_impl_t;
+};
 
-typedef struct rmw_context_impl_t rmw_ertps_session_t;
+typedef struct rmw_context_impl_s rmw_ertps_session_t;
+
+struct rmw_init_options_impl_s
+{
+  bool unused;
+};
 
 // ROS2 entities definitions
 
@@ -127,7 +132,7 @@ typedef struct rmw_ertps_node_t
 {
   rmw_ertps_mempool_item_t mem;
   rmw_node_t * rmw_handle;
-  rmw_context_impl_t * context;
+  rmw_ertps_session_t * context;
 } rmw_ertps_node_t;
 
 typedef struct rmw_ertps_static_input_buffer_t
