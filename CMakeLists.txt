@@ -50,6 +50,7 @@ set(SRCS
   src/rmw_count.cpp
   src/rmw_event.c
   src/rmw_get_gid_for_publisher.cpp
+  src/rmw_get_gid_for_client.cpp
   src/rmw_get_implementation_identifier.c
   src/rmw_get_serialization_format.c
   src/rmw_get_topic_endpoint_info.cpp
