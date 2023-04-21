@@ -67,7 +67,7 @@ rmw_wait(
   }
 
   // If there is no data and timeout is positive, wait for data
-  if (!available_data && timeout > 0) {
+  if (!available_data && (timeout / 1000000ULL) > 0) {
     int32_t timeout_ms;
     if (rmw_time_equal(*wait_timeout, (rmw_time_t)RMW_DURATION_INFINITE)) {
       timeout_ms = static_cast<uint32_t>(0U);
